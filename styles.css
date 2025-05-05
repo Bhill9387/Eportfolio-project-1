@@ -229,7 +229,7 @@ color: #6030b1;
     transition: 500ms ease;
 }
 
-.project__wrapper {
+.Project__Wrapper {
 display: flex;
 box-shadow: 0 20px 80px rgba( 0, 0, 0, 0.45);
 border-radius: 20px;
@@ -252,11 +252,29 @@ z-index: 2;
 .project:hover .project__wrapper:before {
     opacity:0.7;
 }
-.project:hover .project__img {
+.Project:hover .project__img {
     transform: scale(1.07);
     filter:blur(5px);
 }
 
-.project__list {
+.Project__list {
 padding-top: 40px;
+}
+
+.Project__Description {
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    transform: translateY(-50%);
+    max-width: 550px;
+    z-index: 3;
+}
+
+
+.Project__Description--title,
+.Project__Description--sub-title, 
+.Project__Description--para,
+.Project__Description--link {
+text-align: left;
+color: #fff
 }
